@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.calculadora{
+    background-color: lightcoral;
+    border: 1px solid black;
+    margin: 100px auto;
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-areas: 
+    "caja caja caja"
+    "part2 part2 part2"
+    "part3 part3 part3"
+    "part4 part4 part4"
+    "part5 part5 part5"
+
+    ;
+}
+
+.caja{
+    background-color: aliceblue;
+    margin: 10px;
+    text-align: center;
+    font-size: 16px;
+    grid-area: caja;
+    color: black;
+}
+
+.part1{
+    grid-area: part1;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-style: italic;
+}
+
+.b{
+    border-radius: 5px;
+    width: 24%;
+    height: 90%;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+
+.b:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
+.b:active{
+    background-color: red;
+}
+
+.part2{
+    grid-area: part2;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.part3{
+    grid-area: part3;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.part4{
+    grid-area: part4;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.part5{
+    grid-area: part5;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/* .reset{
+    grid-area: reset;
+} */
